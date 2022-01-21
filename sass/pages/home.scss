@@ -1,0 +1,17 @@
+/* @media (max-width: 768px) { } */
+
+     .locationContainer{
+        background-color: #F6F6F6;
+        height:75px;
+        width: 100%;
+        margin-top: 7px;
+        @include flex-center;
+
+     }
+
+     input {
+        height: 100%;
+        border-style: none;
+        background-color: #F6F6F6;
+        margin-left: 20px;
+     }
