@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <!-- Header Part -->
+    <!-- Header Part ( _header.scss )-->
     <header>
             <nav class="nav_bar">
                 <img class="nav_bar_img" src="img/logo/ohmyfood.png" alt="">
@@ -19,12 +20,47 @@
     </header>
 
     <main>
-        <form class="locationContainer">
-            <div>
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text" placeholder="Paris, Belleville">
+
+        <!-- Location Part ( home.scss )-->
+        <form class="location">
+            <div class="location_container">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="Paris, Belleville">
             </div>
         </form>
+
+        <!-- Banner Part ( home.scss ) -->
+        <section class="banner">
+            <h1 class="banner_title">Réservez le menu qui vous convient</h1>
+            <p class="banner_p">Découvrez des restaurants d'exception,</br>séléctionnés par nos soins. </p>
+            <button class="banner_button">Explorer nos restaurants</button>
+        </section>
+
+        <!-- Functionaly Part ( home.scss ) -->
+        <section class="functionaly">
+                <h2>Fonctionnement</h2>
+                <div class="functionaly_container">
+ 
+                    <div class="functionaly_option">
+                        <div class="functionaly_number">1</div>
+                        <i class=" icon fa fa-mobile-alt"></i>
+                        <p class="functionaly_text">Choisissez un restaurant</p>
+                    </div>
+                    
+                    <div class="functionaly_option">
+                        <div class="functionaly_number">2</div>
+                        <i class="icon fas fa-list-ul"></i>
+                        <p class="functionaly_text">Composez votre menu</p>
+                    </div>
+
+                    <div class="functionaly_option">
+                        <div class="functionaly_number">3</div>
+                        <i class="icon fas fa-store "></i>
+                        <p class="functionaly_text">Dégustez au restaurant</p>
+                    </div>
+
+                </div>
+        </section>
 
     </main>
 
