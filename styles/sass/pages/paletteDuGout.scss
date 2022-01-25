@@ -85,6 +85,11 @@
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
             display: flex;
             justify-content: space-between;
+            transition: transform 0.5s ease-in-out 0.1s;
+            &:hover{
+                transform: scale(1.06);
+            box-shadow: 0px 0px 10px 0px #20c7edc6;
+            }
 
             &_contents {
                 display: flex;
@@ -146,4 +151,14 @@
 .footer_menu {
     position: relative;
 margin-top: 259px;
+}
+.add{
+    height: 377px;
+    &_4{
+        height: 84px;
+    }
+}
+
+.footer_4{
+    margin-top: 354px;
 }
