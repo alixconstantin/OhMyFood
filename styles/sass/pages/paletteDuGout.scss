@@ -146,6 +146,10 @@
         height: 51px;
         width: 179px;
         font-weight: 500;
+        transition: transform 0.7s ease-in-out 0.1s;
+        &:hover{
+            @include button-hover;
+        }
     }
 }
 .footer_menu {
