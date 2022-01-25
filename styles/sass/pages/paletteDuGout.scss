@@ -1,0 +1,149 @@
+.fa-arrow-left {
+    position: absolute;
+    left: 23px;
+    font-size: 19px;
+    margin-top: -7px;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    &_top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.containers{
+    margin-top: -50px;
+    background-color: #f2f2f2; 
+}
+
+.globalContainer {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 1145px;
+    border-radius: 37px 37px 0 0;
+    margin-top: -53px;
+    position: sticky;
+
+    &_top {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_h1 {
+            font-size: 30px;
+            width: 80%;
+            font-family: "Shrikhand", cursive;
+            font-weight: normal;
+            margin-left: 5%;
+        }
+
+        &_icon {
+            font-size: 23px;
+            margin-right: 6%;
+        }
+    }
+}
+
+.menu {
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 52px;
+    /* background-color: #449653; */
+    &_title {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 23px;
+        &::after {
+            display: block;
+            content: "";
+            width: 45px;
+            height: 3px;
+            background: #99e2d0;
+            margin-top: 5px;
+        }
+    }
+    &_list {
+        /*background-color: rgb(0, 255, 217);*/
+        width: 90%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_meal {
+            width: 100%;
+            height: 30%;
+            background-color: white;
+            border-radius: 17px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-between;
+
+            &_contents {
+                display: flex;
+                justify-content: space-between;
+                width: 94%;
+                margin-left: 2%;
+                background-color: rgb(169, 222, 222);
+            }
+            &_text {
+                width: auto;
+                height: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                padding-left: 14px;
+                p {
+                    margin-top: -11px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-weight:300;
+                    
+                }
+                h3{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden
+                }
+            }
+            &_price {
+                width: 53px;
+                height: 100%;
+                font-weight: bold;
+                display: flex;
+                align-items: flex-end;
+
+                &_number{
+                    width:auto;
+                    margin-bottom: 17px;
+                }
+            }
+        }
+    }
+}
+
+.order{
+    width: 100%;
+    height:200px;
+    background-color: #f2f2f2;
+    @include flex-center;
+    &_button{
+        @include button-style;
+        margin-top: -26px;
+        border:none;
+        height: 51px;
+        width: 179px;
+        font-weight: 500;
+    }
+}
+.footer_menu {
+    position: relative;
+margin-top: 259px;
+}

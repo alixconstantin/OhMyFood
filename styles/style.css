@@ -2,6 +2,16 @@ body {
   font-family: "Roboto";
 }
 
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -349,7 +359,7 @@ template {
   }
   .nav_bar_img {
     width: 155px;
-    margin-top: 15px;
+    margin-top: 11px;
   }
 }
 @media (min-width: 768px) {
@@ -477,6 +487,11 @@ input:focus {
   align-items: center;
   flex-direction: column;
 }
+.functionaly h2 {
+  align-self: normal;
+  margin-left: 20px;
+  margin-top: -23px;
+}
 .functionaly_container {
   width: 90%;
   height: 62%;
@@ -523,12 +538,6 @@ input:focus {
   margin-left: 77px;
 }
 
-h2 {
-  align-self: normal;
-  margin-left: 20px;
-  margin-top: -23px;
-}
-
 .restaurants {
   width: 100%;
   height: 1100px;
@@ -539,7 +548,9 @@ h2 {
 }
 .restaurants_h2 {
   padding-top: 62px;
-  margin-left: 6%;
+  align-self: normal;
+  margin-left: 20px;
+  margin-top: -23px;
 }
 .restaurants_container {
   width: 88%;
@@ -549,6 +560,9 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.restaurants_container_link {
+  display: contents;
 }
 .restaurants_container_cart {
   width: 100%;
@@ -584,6 +598,11 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
+.restaurants_container_bottom_icon {
+  margin-right: 25px;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
 .restaurants_container_new {
   position: absolute;
   top: 14px;
@@ -600,10 +619,156 @@ h2 {
   font-weight: 500;
 }
 
-.fa-heart {
-  margin-right: 25px;
+.fa-arrow-left {
+  position: absolute;
+  left: 23px;
+  font-size: 19px;
+  margin-top: -7px;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+}
+.image_top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containers {
+  margin-top: -50px;
+  background-color: #f2f2f2;
+}
+
+.globalContainer {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 1145px;
+  border-radius: 37px 37px 0 0;
+  margin-top: -53px;
+  position: sticky;
+}
+.globalContainer_top {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.globalContainer_top_h1 {
+  font-size: 30px;
+  width: 80%;
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  margin-left: 5%;
+}
+.globalContainer_top_icon {
   font-size: 23px;
-  margin-bottom: 10px;
+  margin-right: 6%;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 52px;
+  /* background-color: #449653; */
+}
+.menu_title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 23px;
+}
+.menu_title::after {
+  display: block;
+  content: "";
+  width: 45px;
+  height: 3px;
+  background: #99e2d0;
+  margin-top: 5px;
+}
+.menu_list {
+  /*background-color: rgb(0, 255, 217);*/
+  width: 90%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu_list_meal {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  border-radius: 17px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+.menu_list_meal_contents {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  margin-left: 2%;
+  background-color: #a9dede;
+}
+.menu_list_meal_text {
+  width: auto;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 14px;
+}
+.menu_list_meal_text p {
+  margin-top: -11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 300;
+}
+.menu_list_meal_text h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu_list_meal_price {
+  width: 53px;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}
+.menu_list_meal_price_number {
+  width: auto;
+  margin-bottom: 17px;
+}
+
+.order {
+  width: 100%;
+  height: 200px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order_button {
+  opacity: 1;
+  background: linear-gradient(180deg, #ff78d9 0%, #9356dc 100%);
+  color: white;
+  padding: 0 20px;
+  border-radius: 200px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  margin-top: -26px;
+  border: none;
+  height: 51px;
+  width: 179px;
+  font-weight: 500;
+}
+
+.footer_menu {
+  position: relative;
+  margin-top: 259px;
 }
 
 /*# sourceMappingURL=style.css.map */
