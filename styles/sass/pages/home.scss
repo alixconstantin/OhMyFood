@@ -37,6 +37,12 @@ input {
       text-align: center;
       width: 316px;
       margin-top: -11px;
+      @media (min-width: 768px) and (max-width: 992px) {
+         width: 389px;
+      }
+      @media(min-width: 992px){
+         width:517px;
+      }
    }
    &_p {
       text-align: center;
@@ -64,11 +70,17 @@ input {
    height: 435px;
    @include flex-center;
    flex-direction: column;
+   @media (min-width:768px){
+      height:287px;
+   }
 
    h2{
       align-self: normal;
       margin-left: 20px;
-      margin-top: -23px;
+      margin-top: -23px; 
+      @media (min-width:768px){
+         margin-top:0;
+      }
    }
    &_container {
       width: 90%;
@@ -78,6 +90,10 @@ input {
       align-items: center;
       flex-direction: column;
       cursor: pointer;
+      @media (min-width: 768px) {
+         flex-direction:row;
+         margin-top:-24px;
+      }
    }
    &_option {
       width: 90%;
@@ -92,6 +108,9 @@ input {
          .functionaly_icon {
             color: $purple;
          }
+      }
+      @media (min-width:768px){
+         width:30%;
       }
    }
 
@@ -132,6 +151,12 @@ input {
    margin-left: 20px;
    margin-top: -23px;   
    }
+   @media (min-width:768px){
+      height:630px;
+   }
+   @media (min-width:992px){
+      height:420px;// Smoke Weed Everyday
+   }
    &_container {
       width: 88%;
       height: 86%;
@@ -140,6 +165,14 @@ input {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      @media (min-width:768px){
+      
+      flex-direction: row;
+      flex-wrap: wrap;
+   }  
+   @media (min-width:768px){
+      width:98%;
+   }
 
       &_link{
          display:contents;
@@ -156,6 +189,14 @@ input {
          &:hover {
             transform: scale(1.05);
             box-shadow: 0px 0px 10px 0px #20c7edc6;
+         }
+         @media (min-width:768px){
+            width: 48.5%;
+            height:242px;
+         }
+         @media (min-width:992px){
+            width: 24%;
+            height:285px;
          }
       }
       &_img {
