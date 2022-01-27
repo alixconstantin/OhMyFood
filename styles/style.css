@@ -464,7 +464,10 @@ template {
   text-decoration: none;
   font-weight: 500;
 }
-.footer_container_link_push {
+.footer_container_link_pushA {
+  margin-left: 14px;
+}
+.footer_container_link_pushB {
   margin-left: 10px;
 }
 .footer_container_link:hover {

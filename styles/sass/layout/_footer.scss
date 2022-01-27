@@ -28,7 +28,10 @@
         color:white;
         text-decoration: none;
         font-weight: 500;
-        &_push{
+        &_pushA{
+            margin-left:14px;
+        }
+        &_pushB{
             margin-left:10px;
         }
         &:hover{
