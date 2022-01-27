@@ -1,3 +1,11 @@
+@import '../sass/base/normalize';
+@import '../sass/abstracts/_variables';
+@import '../sass/abstracts/mixins';
+@import '../sass/layout/header';
+@import '../sass/layout/footer';
+@import '../sass/pages/home';
+@import '../sass/pages/menu';
+@import '../sass/pages/loader.scss';
 
 body {
     font-family: 'Roboto';
@@ -9,6 +17,17 @@ html,body{
 a{
     text-decoration:none;
     color:black;
+}
+
+
+ 
+.heartUp:before {
+
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 23px;
+  
 }
 
 /* Keyframe */ 
@@ -70,11 +89,3 @@ a{
             animation-delay: 0.9s;
   }
 
-@import '../sass/base/normalize';
-@import '../sass/abstracts/_variables';
-@import '../sass/abstracts/mixins';
-@import '../sass/layout/header';
-@import '../sass/layout/footer';
-@import '../sass/pages/home';
-@import '../sass/pages/menu';
-@import '../sass/pages/loader.scss';

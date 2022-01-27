@@ -227,6 +227,9 @@ input {
             margin-right: 25px;
             font-size: 23px;
             margin-bottom: 10px;
+            &:hover{
+               display: none;
+            }
          }
       }
       &_new {
