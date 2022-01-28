@@ -213,6 +213,7 @@ input {
          &_p {
             &_bold {
                font-weight: 900;
+               white-space: nowrap;
             }
             &_secondaryP {
                margin-top: -11px;
@@ -224,12 +225,12 @@ input {
          align-items: center;
          justify-content: space-between;
          &_icon{
-            margin-right: 25px;
+            margin-right: 26px;
             font-size: 23px;
             margin-bottom: 10px;
-            &:hover{
-               display: none;
-            }
+           
+            
+            
          }
       }
       &_new {
@@ -249,4 +250,45 @@ input {
       }
    }
 }
+ 
+.heartUp{
 
+   background: $gradient;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: 22px;
+   opacity: 0;
+   z-index: 2;
+ }
+ 
+
+.heartUp{
+@media (max-width: 768px){
+   position: absolute;
+   right: 26.7px;
+   bottom: 26.9px;
+   &:hover{
+      animation: opacity 0.7s ease-in-out;
+      animation-fill-mode: forwards;
+      & + .heartDown{
+         animation: opacityOut 0.7s ease-in-out;
+         animation-fill-mode: forwards;
+      }
+   } 
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+   position: absolute;
+   right: 26px;
+   bottom: 34.5px;
+}
+@media (min-width: 992px){
+   position: absolute;
+   right: 26px;
+   bottom: 48.5px;
+}
+
+}

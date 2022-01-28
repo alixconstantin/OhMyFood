@@ -20,15 +20,6 @@ a{
 }
 
 
- 
-.heartUp:before {
-
-  background: $gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 23px;
-  
-}
 
 /* Keyframe */ 
 @keyframes slide-left {
@@ -47,6 +38,17 @@ a{
     100% {
       opacity: 1;
     }
+    
+  }
+
+  @keyframes opacityOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+    
   }
   
   .opacity-effect {
