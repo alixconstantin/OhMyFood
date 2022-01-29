@@ -87,13 +87,31 @@
             display: flex;
             justify-content: space-between;
             transition: transform 0.5s ease-in-out 0.1s;
+            &_checks  {
+                transition: transform 2s;
+            }
             &:hover{
                 transform: scale(1.06);
             box-shadow: 0px 0px 10px 0px #20c7edc6;
             }
-            &:hover .slider  {
-                
+            &:hover &_check {
+                display: inline;
+                animation:slide-left 0.7s ease-in-out;
+                animation-fill-mode: forwards;
+                transform-origin: right;
+                padding: 0 30px;
+              
             }
+            &:hover &_price {
+            
+                padding-right: 70px;
+                transition: 0.7s ease-in-out;
+            
+            }
+            &:hover &_check i {
+                animation:rotation 0.7s ease-in-out;      
+            }
+
 
             &_contents {
                 display: flex;
@@ -133,6 +151,16 @@
                     width:auto;
                     margin-bottom: 17px;
                 }
+            }
+            &_check{
+                display: none;
+                position: absolute;
+                background: #99E2D0;
+                border-radius: 0 15px 15px 0;
+                right: 0px;
+                padding: 0 13px;
+                height: 100%;
+                width:9px;
             }
             
         }
@@ -206,28 +234,9 @@
           }
        }
 }
-/* 
-.heartDown_menu{
-    background: $gradient;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-size: 22px;
-   opacity: 0;
-   z-index: 3000;
-   position: absolute;
-   right: 6.05%;
-
+.fa-check-circle{
+    margin-top: 26px;
+    margin-left: -9px;
+    font-size: 28px;
+   /* transition: transform 3s;*/
 }
-
-.heartUp_menu{
-
-    &:hover {
-        animation: opacity 0.7s ease-in-out;
-        animation-fill-mode: forwards;
-        & + .heartDown_menu {
-           animation: opacityOut 0.7s ease-in-out;
-           animation-fill-mode: forwards;
-        }
-     }
-}
-*/

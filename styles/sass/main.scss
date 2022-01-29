@@ -23,13 +23,13 @@ a{
 
 /* Keyframe */ 
 @keyframes slide-left {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100px);
-    }
+  0% {
+            transform: scaleX(0);
   }
+  100% {
+            transform: scaleX(-50px);
+  }
+}
 
   @keyframes opacity {
     0% {
@@ -49,6 +49,15 @@ a{
       opacity: 0;
     }
     
+  }
+
+  @keyframes rotation {
+    from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
   }
   
   .opacity-effect {
