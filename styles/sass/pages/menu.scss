@@ -16,7 +16,11 @@
 }
 .containers{
     margin-top: -50px;
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
+    @media (min-width: 768px){
+        display:flex;
+     }
+
 }
 
 .globalContainer {
@@ -55,7 +59,13 @@
     height: auto;
     margin-left: 5%;
     margin-top: 52px;
-    /* background-color: #449653; */
+    @media (min-width: 768px) and (max-width: 992px) {
+        width: 27%;
+     }
+     @media (min-width: 992px) {
+        width: 33%;
+     }
+  
     &_title {
         text-transform: uppercase;
         font-weight: 300;
