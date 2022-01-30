@@ -461,6 +461,7 @@ input:focus {
   text-align: center;
   width: 316px;
   margin-top: -11px;
+  color: red;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .banner_title {
@@ -849,12 +850,7 @@ input:focus {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  .menu_list {
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .menu_list {
     width: 100%;
   }
@@ -1025,6 +1021,10 @@ input:focus {
 @media (min-width: 768px) {
   .main_menu {
     margin-bottom: -259px;
+  }
+
+  .main_menu_note {
+    margin-bottom: -354px;
   }
 }
 .cont {
