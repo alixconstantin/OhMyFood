@@ -64,8 +64,10 @@
     margin-left: 5%;
     margin-top: 52px;
     @media (min-width: 768px){
-        width:30%;
-        margin-left:0;
+        width:28%;
+    }
+    @media (min-width: 992px){
+        width:29%;
     }
 
   
@@ -258,7 +260,6 @@
     margin-top: 26px;
     margin-left: -9px;
     font-size: 28px;
-   /* transition: transform 3s;*/
 }
 
 @media (min-width: 768px){

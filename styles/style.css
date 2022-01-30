@@ -819,8 +819,12 @@ input:focus {
 }
 @media (min-width: 768px) {
   .menu {
-    width: 30%;
-    margin-left: 0;
+    width: 28%;
+  }
+}
+@media (min-width: 992px) {
+  .menu {
+    width: 29%;
   }
 }
 .menu_title {
@@ -1016,7 +1020,6 @@ input:focus {
   margin-top: 26px;
   margin-left: -9px;
   font-size: 28px;
-  /* transition: transform 3s;*/
 }
 
 @media (min-width: 768px) {
@@ -1148,7 +1151,6 @@ input:focus {
     filter: blur(0.5rem);
   }
   to {
-    letter-spacing: none;
     filter: blur(0rem);
   }
 }
