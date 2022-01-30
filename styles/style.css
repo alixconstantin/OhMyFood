@@ -461,7 +461,6 @@ input:focus {
   text-align: center;
   width: 316px;
   margin-top: -11px;
-  color: red;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .banner_title {
