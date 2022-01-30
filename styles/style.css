@@ -820,12 +820,8 @@ input:focus {
 }
 @media (min-width: 768px) {
   .menu {
-    width: 28%;
-  }
-}
-@media (min-width: 992px) {
-  .menu {
-    width: 29%;
+    width: 27%;
+    margin-left: 0%;
   }
 }
 .menu_title {
