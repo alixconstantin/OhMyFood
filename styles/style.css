@@ -861,7 +861,7 @@ input:focus {
   justify-content: space-between;
   transition: transform 1.5s ease-in-out;
 }
-.menu_list_meal_checks {
+.menu_list_meal_check {
   display: none;
   position: absolute;
   background: #99E2D0;
